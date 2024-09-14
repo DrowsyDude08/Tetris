@@ -1,11 +1,11 @@
 // ConsoleApplication2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
-#include <iostream>
-
+#include "MainController.hpp"
 int main()
 {
-    std::cout << "Hello World!\n";
+    MainController controller;
+    controller.run();
+    return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

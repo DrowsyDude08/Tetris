@@ -14,12 +14,19 @@ endif()
 find_package(SFML 2.6 COMPONENTS system window graphics REQUIRED)
 
 add_executable(Tetris
-Source/Main.cpp)
+Source/Main.cpp
+Source/MainMenuView.cpp
+Source/MainMenuView.hpp
+Source/ColorPalette.hpp
+Source/MainController.cpp
+Source/MainController.hpp)
 
 target_link_libraries(Tetris
 sfml-system
 sfml-window
 sfml-graphics)
+
+target_compile_definitions(Tetris PRIVATE RESOURCE_DIR="${CMAKE_SOURCE_DIR}/Resources")
 
 install(TARGETS Tetris DESTINATION bin)
 install(DIRECTORY Source/ DESTINATION include)

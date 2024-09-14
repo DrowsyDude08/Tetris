@@ -26,5 +26,5 @@ if %errorlevel% neq 0 (
 
 cd ..
 
-echo Сборка завершена. Проект находится в директории %BuildDir%
+echo Done.
 pause
